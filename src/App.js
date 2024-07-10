@@ -5,11 +5,12 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './home/home';
 import Post from './post/post';
 import Header from './layout/headers';
+import Footer from './layout/footer';
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
       <div>
         <main ClassName="body">
           <Routes>
@@ -18,6 +19,7 @@ function App() {
           </Routes>
         </main>
       </div>
+      <Footer />
     </div>
   );
 }

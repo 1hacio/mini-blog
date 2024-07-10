@@ -1,7 +1,15 @@
 import React from "react";
 import img from "../img/img.png"
+import Career from "./career";
 
 export default function Home() {
+
+    const careerList = [
+        { title: "제목1", subTitle: "스이세이", Date: "0322", comment: "stella stella" },
+        { title: "제목2", subTitle: "레오니드", Date: "0811", comment: "the WALL" },
+        { title: "제목3", subTitle: "릭애슬리", Date: "릭롤", comment: "Never Gonna Give You Up" }
+    ]
+
     return (
         <div className="w-full max-w-3-xl mx-auto py-12 px4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center space-y-6">
@@ -18,6 +26,20 @@ export default function Home() {
                     <p className="text-green-300">
                         일하는 노예 핫산
                     </p>
+                </div>
+            </div>
+            <div className="mt-12 space-y-8">
+                <div>
+                    <h2 className="text-2xl font-bold mb-4">경력</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        {careerList.map((option) => (
+                            <Career title={option.title}
+                                subTitle={option.subTitle}
+                                date={option.Date}
+                                comment={option.comment}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
