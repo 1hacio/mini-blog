@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function Post() {
     const markdownFiles = [
-        { name: "글1", content: "가보자" },
-        { name: "ㅇㅇd", content: "가보자고" }
+        { name: "스타트", content: "가보자" },
+        { name: "출항", content: "가보자고" }
     ];
     return (
         <div className="flex-1 py-8 px-6">
